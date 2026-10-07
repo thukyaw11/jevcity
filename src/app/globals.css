@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss" source("../"); /* only scan src/, not the model and dataset files */
 
 :root {
   --background: #ffffff;
