@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# model training checkpoint (exported model lives in public/models)
+/driving_dataset/checkpoint/
+/driving_dataset_new/checkpoint/
+
+# generated training data (rebuild with generate_dataset.py)
+/driving_dataset*/*.jsonl
+/driving_dataset*/*.csv
+/driving_dataset*/stats.json
+
+# python
+__pycache__/
+.venv/
+
+# old dataset, replaced by driving_dataset_new
+/driving_dataset/
